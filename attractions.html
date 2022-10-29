@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>TriunfandoPE - Atrativos</title>
+    <link rel="shortcut icon" href="img/Logo transparente.png">
+    <link rel="stylesheet" href="style_attractions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"> TriunfandoPE </a>
+        </div>
+        <ul class="menu-desktop">
+            <li><a href="index.html"> Início </a></li>
+            <li><a href="about.html"> Sobre </a></li>
+            <li><a href="attractions.html" class="ativo"> Atrativos </a></li>
+            <li><a href="services.html"> Serviços </a></li>
+            <li><a href="contact.html"> Contato </a></li>
+        </ul>
+
+        <ul class="menu-mobile">
+            <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <li><a href="index.html"> Início </a></li>
+            <li><a href="about.html"> Sobre </a></li>
+            <li><a href="attractions.html" class="ativo"> Atrativos </a></li>
+            <li><a href="services.html"> Serviços </a></li>
+            <li><a href="contact.html"> Contato </a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+    <section class="banner">
+        <section class="containerproje">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h3>Pico do Papagaio</h3>
+                        <p>O Pico do Papagaio é o ponto mais alto de Pernambuco, com mais de 1.200 metros de altura.</p>
+                        <a href="https://bit.ly/3SBsNJu" class="btnproj" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h3>Museu do Cangaço</h3>
+                        <p>No Museu do Cangaço de Triunfo, podemos encontrar peças originais dos cangaceiros ou itens que façam alusão ao cangaço.</p>
+                        <a href="https://bit.ly/3f9CH7B" class="btnproj" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h3>Cachoeira do Grito</h3>
+                        <p>Conhecida também por Cachoeira do Pinga tem uma história que toda pessoa que toma banho em suas águas, deixa superstições e medos para trás, com um grito bem forte que ecoa por todo o riacho.</p>
+                        <a href="https://bit.ly/3FcCiff" class="btnproj" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="contentproje">
+                        <h3>Cacimba de João Neco</h3>
+                        <p>João Neco sofria com a falta de água no seu sítio, na zona rural de Triunfo, no início do século 20. Para amenizar o problema ele mesmo cavou, entre 1932 e 1935, um poço com cerca de 25m de profundidade para poder se abastecer.</p>
+                        <a href="https://bit.ly/3SCKAQv" class="btnproj" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" onclick="prev()"> < </div>
+        <div id="next" onclick="next()"> > </div>
+
+        </section>
+    </section>
+    
+    <script src="interacao/script.js"></script>
+
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile');
+        var iconClose = document.querySelector('.menu-mobile .icon-close');
+
+        menuIcon.addEventListener('click' ,function(){
+            menuMobile.classList.add('ativo');
+        });
+        iconClose.addEventListener('click' ,function(){
+            menuMobile.classList.remove('ativo');
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <h3>Obrigado por acessar o site!</h3>
+            <p>Site criado com fins educacionais da matéria de Elaboração de Roteiros Turísticos (ERT) da Escola Técnica Estadual Jurandir Bezerra Lins.</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/triunfandope/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i>
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright & copy; 2022 ETEJBL. designed by <span>Álefe Vinícius&trade;</span></p>
+        </div>
+    </footer>
+
+    <section>
+        <a href="#" class="btn"></a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,327 @@
+/*/ Configurações Gerais /*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*/ Body /*/
+
+body::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(10, 10, 10);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FAB016;    
+    border-radius: 20px;       
+    border: 4px solid black;  
+  }
+
+nav{
+    background-color: #FAB016;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display:  flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li{
+    margin-left: 7px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav li a.ativo{
+    color: black;
+    background-color: white;
+}
+
+.banner{
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*/ Responsivo /*/
+
+.menu-icon{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-mobile{
+    background-color: #FAB016;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.menu-mobile.ativo{
+    left: 0;
+}
+
+.menu-mobile .icon-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media (max-width: 800px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+    }
+    .menu-mobile li{
+        margin: 20px 0;
+    }
+    .menu-mobile li a{
+        font-size: 25px;
+    }
+    .texto .titulo{
+        font-size: 50px;
+    }
+    .texto .sub_titulo{
+        font-size: 30px;
+    }
+}
+
+/*/ Footer /*/
+
+footer{
+    position: absolute;
+    background: #FAB016;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans" sans-serif;
+    padding-top: 40px;
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a i{
+    font-size: 1.7rem;
+    transition: color .2s ease;
+}
+
+.socials a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-bottom{
+    background: #FAB016;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*/ Voltar ao Topo /*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+/*/ Serviços /*/
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.container .card{
+    width: 300px;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #FF8C00 0%, #FAB016 100%);
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+    transition: transform 0.3s;
+}
+
+.container .card:hover{
+    transform: scale(1.050);
+}
+
+.container .card .card-title{
+    padding: 30px 20px;
+    border-bottom: 2px solid orangered;
+}
+
+.container .card .card-title h2{
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: yellow;
+}
+
+.container .card .card-title p span{
+    font-size: 40px;
+    padding: 0 5px;
+}
+
+.container .card .card-content ul{
+    padding: 10px 30px;
+    padding-bottom: 20px;
+}
+
+.container .card .card-content ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.container .card .card-content ul li i{
+    margin-right: 4px;
+}
+
+.container .card .card-content button{
+    width: 120px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .card .card-content button:hover{
+    background: #FF8C00;
+    letter-spacing: 1.2px;
+}
+
+.container .card .card-content button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
