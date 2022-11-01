@@ -1,4 +1,4 @@
-/*/ Configurações Gerais /*/
+﻿/*/ Configurações Gerais /*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 *{
@@ -10,7 +10,7 @@
 
 /*/ Body /*/
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
     width: 13px;
   }
   
@@ -193,10 +193,13 @@ nav li a.ativo{
         font-size: 25px;
     }
     .texto .titulo{
-        font-size: 50px;
+        font-size: 40px;
     }
     .texto .sub_titulo{
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .texto .botoes button.overlay{
+        margin: 7px;
     }
 }
 
