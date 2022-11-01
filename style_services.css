@@ -360,6 +360,10 @@ html, body {
     padding: 0 5px;
     display: flex;
     }
+    .container-two .card-two .card-title2 p{
+        font-size: 12px;
+        display: flex;
+    }
     .container-two .card-content-two button a{
         text-decoration: none;
         color: black;
