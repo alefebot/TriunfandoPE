@@ -71,7 +71,7 @@ nav li a.ativo{
 }
 
 .banner{
-    height: 100vh;
+    height: 103vh;
     background: linear-gradient(rgba(248, 182, 2, 0.596), rgba(255, 166, 0, 0.308));
     display: flex;
     align-items: center;
@@ -374,6 +374,15 @@ html, body {
         color: black;
         cursor: pointer;
         transition: 0.3s;
+    }
+    .banner{
+        height: 110vh;
+    }
+}
+
+@media (max-width: 550px){
+    .banner{
+        height: 112vh;
     }
 }
 
