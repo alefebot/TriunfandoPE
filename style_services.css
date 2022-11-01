@@ -344,7 +344,7 @@ html, body {
    }
    .container-two{
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
    }
    .container-two .card-two{
     text-align: center;
@@ -387,7 +387,7 @@ html, body {
     }
     .container-two{
         width: 100%;
-        font-size: 15px;
+        font-size: 13px;
        }
 }
 
