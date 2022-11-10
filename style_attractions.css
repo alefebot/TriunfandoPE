@@ -286,6 +286,15 @@ html, body {
     height: 10%;
 }
 
+.containerproje .slide-container .slide .contentproje .grito p{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    font-size: 16px;
+}
+
 .containerproje .slide-container .slide .contentproje .btnproj{
     margin-top: 10px;
     display: inline-block;
